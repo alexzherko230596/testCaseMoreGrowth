@@ -1,0 +1,87 @@
+@import '../../styles/colors.module';
+@import '../../styles//mixins.module';
+
+.footer{
+    height: 210px;
+    background-color: #E7ECFF;
+
+    &__wrapper{
+        margin-top: 60px;
+        flex-direction: column;
+
+        &__top{
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            align-items: center;
+
+            &_title{
+                color: #939EA4;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            &_descr{
+                @include logo;
+            }
+        }
+
+        &_devider{
+            background: #CDD1D4;
+            width: 100%;
+            height: 1px;
+            margin-top: 40px;
+        }
+
+        &__social{
+
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+
+            &__list{
+
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                padding: 0px;
+                cursor: pointer;
+                color: $blueHeader;
+        
+                &_element{
+        
+                    margin: 0px 30px;
+                    transition: .5s all;
+        
+                }
+        
+                &_element:first-child{
+                    margin-left: 0px;
+                }
+        
+                &_element:hover{
+                    color: $blueButton;
+                }
+            }
+
+            &__sites{
+                align-items: center;
+
+                &_img{
+                    width: 16px;
+                    height: 16px;
+                    margin-left: 30px;
+                }
+
+                &_img:hover{
+                    fill: green; 
+                    color: green;
+                }
+            }
+        }
+    }
+}

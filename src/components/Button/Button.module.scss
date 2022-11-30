@@ -1,0 +1,53 @@
+@import '../../styles/colors.module';
+
+.tinyButton{
+    background: $blueButton;
+    border-radius: 2px; 
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    height: 26px;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.tinyButton:hover{
+    background: $blueHeader;
+}
+
+.tinyButton:active{
+    background: $blueText;
+}
+
+.hugeButton{
+    background: $blueButton;
+    border-radius: 2px; 
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    height: 36px;
+    transition: .5s all;
+    width: 189px;
+    cursor: pointer;
+}
+
+.hugeButton:hover{
+    background: $blueHeader;
+}
+
+.hugeButton:active{
+    background: $blueText;
+}
+
+.hugeButton_white{
+    background: transparent;
+    color: $blueTitle;
+    border: solid 2px $blueText;
+    border-radius: 2px;
+}
+
+.hugeButton_white:hover{
+    color: white;
+}

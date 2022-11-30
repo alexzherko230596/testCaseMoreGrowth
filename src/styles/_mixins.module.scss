@@ -1,0 +1,30 @@
+@mixin title {
+    margin: 0px;
+    color: $blueTitle;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    letter-spacing: 1px;
+}
+
+@mixin descr {
+    margin-top: 20px;
+    color: $blueHeader;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@mixin descrTop{
+    margin-top: 14px;
+}
+
+@mixin logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #37447E;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 38px;
+}

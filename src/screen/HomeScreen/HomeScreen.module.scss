@@ -1,0 +1,222 @@
+@import '../../styles/colors.module';
+@import '../../styles/mixins.module';
+
+.home{
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+
+    &__main{
+
+        height: 1055px;
+
+        &_img{
+            position: absolute;
+            z-index: -10;
+            right: 0;
+            top: 0px;
+        }
+        
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 540px;
+            padding-bottom: 139px;
+
+            &_h1{
+                @include title;
+            }
+
+            &_descr{
+                @include descr;
+                margin: 20px 0px 0px 0px;
+            }
+
+            &_descrMargin{
+                @include descrTop;
+            }
+
+            &__buttons{
+                margin-top: 69px;
+            }
+        }
+    }
+
+    &__second{
+
+        display: flex;
+        flex-direction: row;
+        height: 742px;
+        justify-content: space-between;
+        align-items: center;
+
+        &__textBlock{
+            flex-direction: column;
+            width: 540px;
+
+            &_h2{
+                @include title;
+                font-size: 36px;
+                line-height: 48px;
+            }
+
+            &_descr{
+                @include descr;
+                margin-top: 16px;
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            &_descrMargin{
+                @include descrTop;
+                margin-top: 10px;
+            }
+
+            &__wrapperElements{
+                margin-top: 80px;
+                justify-content: space-between;
+
+                &__element{
+                    flex-direction: column;
+                    width: 255px;
+
+                    &_img{
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    &_title{
+                        margin-top: 14px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: $blueTitle;
+                    }
+
+                    &_descr{
+                        margin-top: 6px;
+                        color: $blueText;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+
+        &_img{
+
+        }
+    }
+
+    &__third{
+
+        display: flex;
+        flex-direction: row;
+        height: 569px;
+        justify-content: space-between;
+        align-items: center;
+
+        &__textBlock{
+            flex-direction: column;
+            width: 540px;
+
+            &_h2{
+                @include title;
+                font-size: 36px;
+                line-height: 48px;
+            }
+
+            &_descr{
+                @include descr;
+                margin: 16px 0px 0px 0px;
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            &_descrMargin{
+                @include descrTop;
+                margin: 10px 0px 0px 0px;
+            }
+
+            &__wrapperElements{
+                margin-top: 80px;
+                justify-content: space-between;
+
+                &__element{
+                    flex-direction: column;
+                    width: 255px;
+
+                    &_img{
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    &_title{
+                        margin-top: 14px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: $blueTitle;
+                    }
+
+                    &_descr{
+                        margin-top: 6px;
+                        color: $blueText;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__price{
+        background: url('../../img/priceBg.svg') center center/cover no-repeat;
+        height: 805px;
+        display: flex;
+        align-items: center;
+
+        &__wrapper{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+            text-align: center;
+
+            &_h2{
+                @include title;
+                font-size: 36px;
+                line-height: 48px;
+                width: 600px;
+            }
+
+            &_h3{
+                @include descr;
+                margin-top: 16px;
+                font-size: 16px;
+                line-height: 26px;
+                width: 600px;
+            }
+
+            &_amount{
+                @include title;
+                margin-top: 35px;
+            }
+
+            &_kit{
+                @include descr;
+                margin-top: 0px;
+                color: #37447E;
+            }
+
+            &_options{
+                color: #5D6970;
+                margin-top: 60px;
+            }
+        }
+    }
+}
