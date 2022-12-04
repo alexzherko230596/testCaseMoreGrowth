@@ -56,11 +56,23 @@
         
                     margin: 0px 30px;
                     transition: .5s all;
+                    position: relative;
         
                 }
         
                 &_element:first-child{
                     margin-left: 0px;
+                }
+
+                &_element:hover::after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    color: $blueTitle;
+                    background-color: $blueTitle;
+                    bottom: -2px;
+                    left: 0px;
                 }
         
                 &_element:hover{
